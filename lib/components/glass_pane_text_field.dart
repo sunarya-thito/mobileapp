@@ -5,10 +5,12 @@ class GlassPaneTextField extends StatelessWidget {
   final String label;
   final TextEditingController controller;
   final bool obscureText;
+  final TextInputType? keyboardType;
   const GlassPaneTextField(
       {Key? key,
       required this.controller,
       required this.label,
+      this.keyboardType,
       this.obscureText = false})
       : super(key: key);
 
@@ -17,6 +19,7 @@ class GlassPaneTextField extends StatelessWidget {
     return TextField(
       controller: controller,
       obscureText: obscureText,
+      keyboardType: keyboardType,
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),

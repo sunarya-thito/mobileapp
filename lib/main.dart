@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:mobileapp/components/body_data_chart.dart';
 import 'package:mobileapp/components/time_zone_manager.dart';
 import 'package:mobileapp/converter.dart';
 import 'package:mobileapp/pages/account/developer_profile.dart';
@@ -266,14 +267,16 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return UserManager(
-      child: ToolsManager(
-        child: TimeZoneManager(
-          child: MaterialApp.router(
-            routerConfig: _router,
-            title: 'Flutter Demo',
-            theme: ThemeData.dark(
-              useMaterial3: true,
+    return BodyDataManager(
+      child: UserManager(
+        child: ToolsManager(
+          child: TimeZoneManager(
+            child: MaterialApp.router(
+              routerConfig: _router,
+              title: 'Flutter Demo',
+              theme: ThemeData.dark(
+                useMaterial3: true,
+              ),
             ),
           ),
         ),

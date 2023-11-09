@@ -26,6 +26,7 @@ class UserManagerState extends State<UserManager> {
   @override
   void initState() {
     super.initState();
+    user = FirebaseAuth.instance.currentUser;
     FirebaseAuth.instance.userChanges().listen(_onUserChange);
   }
 

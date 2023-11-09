@@ -213,4 +213,10 @@ final _tools = [
     icon: const Icon(Icons.numbers),
     routeName: kToolsNumberConverterPage,
   ),
+  Tool(
+    name: 'Body Data Record',
+    description: 'Catat perubahan tinggi dan berat badan anda',
+    icon: const Icon(Icons.person),
+    routeName: kBodyDataRecord,
+  )
 ];

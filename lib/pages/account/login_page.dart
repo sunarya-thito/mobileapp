@@ -119,7 +119,11 @@ class _LoginPageState extends State<LoginPage> {
                               );
                             },
                           );
+                          return;
                         }
+                        Navigator.popUntil(context, (route) {
+                          return route.isFirst;
+                        });
                       });
                     });
                   },
