@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1069622762551",
+    "project_id": "mobileapp-6bbb6",
+    "storage_bucket": "mobileapp-6bbb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069622762551:android:a71b09ae9eee760ee633b2",
+        "android_client_info": {
+          "package_name": "itenas.thito.mobileapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcKOzFfRXY-Z16SgUsFKwwoz8xmx05vtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
