@@ -58,7 +58,9 @@ class _AnonymousProfileState extends State<AnonymousProfile> {
           ),
           GlassPaneElevatedButton(
             child: Text('About'),
-            onPressed: () {},
+            onPressed: () {
+              context.pushNamed(kDeveloperPage);
+            },
             backgroundColor: Colors.transparent,
           )
         ],

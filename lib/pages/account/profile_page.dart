@@ -20,7 +20,7 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     var user = UserData.of(context).user;
-    if (user == null) {
+    if (user == null || user.isAnonymous) {
       return AnonymousProfile();
     }
     return Scaffold(
