@@ -245,7 +245,7 @@ class _MyAppState extends State<MyApp> {
                         path: 'about',
                         name: kDeveloperPage,
                         builder: (context, state) => DeveloperProfile(),
-                      )
+                      ),
                       GoRoute(
                         path: 'registerpassword',
                         name: kRegisterPasswordPage,
